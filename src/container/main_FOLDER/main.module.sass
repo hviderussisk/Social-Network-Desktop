@@ -1,0 +1,43 @@
+.background
+    position: absolute
+    left: 0
+    height: 100vh
+    width: 100%
+    background: #618aff
+.main_container
+    padding: 80px 100px
+    display: flex
+    justify-content: center
+    .ui_block
+        display: flex
+        flex-direction: row
+        justify-content: center
+        background-color: #fff
+        border-radius: 5px
+        border: 1px solid #e6ecf5
+        margin-bottom: 15px
+        position: relative
+        padding: 15px 0px
+        box-shadow: 0px 35px 83px 0px rgba(0,0,0,0.35)
+        -webkit-box-shadow: 0px 35px 83px 0px rgba(0,0,0,0.35)
+        -moz-box-shadow: 0px 35px 83px 0px rgba(0,0,0,0.35)
+        h2
+            font-size: 20px
+        input
+            width: 100%
+        .tab
+            display: flex
+            position: absolute
+            top: -40px
+            .tab__item
+                background: white
+                padding: 7px 20px
+                border-radius: 5px
+                margin-right: 5px
+                cursor: pointer
+                font-size: 13px
+                transition: .1s
+                &:hover
+                    background: #fafafa
+            .active
+                background: #fafafa

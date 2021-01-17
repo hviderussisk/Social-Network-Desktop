@@ -1,0 +1,139 @@
+.content
+  .info
+    margin: 25px 0
+    font-size: 13px
+    color: black
+  .changePost
+    width: 100%
+    display: none
+    form
+      textarea
+        border: 1px solid #d3d9de
+        width: 100%
+        line-height: 16px
+        font-size: 13px
+        outline: none
+        font-family: inherit
+        resize: none
+        border-radius: 4px
+        overflow: hidden
+        padding: 5px 15px 5px 15px
+        margin: 0
+        margin: 25px 0px 10px 0px
+        &:-moz-placeholder
+            color: #888da8
+        &::-webkit-input-placeholder
+            color: #888da8
+      .change_post_buttons
+        margin-bottom: 15px
+        display: flex
+        justify-content: flex-end
+        .back_change_button
+          background: transparent
+          border-radius: 4px
+          border: none
+          color: #888da8
+          margin-right: 20px
+          cursor: pointer
+          padding: 7px 16px 8px
+          outline: none
+          &:hover
+           background:  #e5ebf1
+        .done_change_button
+          border-radius: 4px
+          border: none
+          color: white
+          background: #2787f5
+          outline: none
+          cursor: pointer
+          padding: 7px 16px 8px
+  .author
+    display: flex
+    flex-direction: row
+    position: relative
+    .changeLabel
+          margin-left: 10px
+          font-size: 13px
+          display: none
+          &::before
+            content: '\00b7'
+            color: #888da8
+            margin-right: 5px;
+    .time
+      font-size: 13px
+    .avatar
+      img
+        width: 40px
+        height: 40px
+        border-radius: 2px
+        margin-right: 15px
+    .name_link
+      font-weight: 500
+      text-decoration: none
+      color: black
+      font-size: 15px
+    .modalMore
+      background: White
+      z-index: 1
+      border-radius: 4px
+      border: 1px solid #cad3e0
+      right: -16px
+      top: 35px
+      visibility: hidden
+      padding: 4px 0px
+      position: absolute
+      transition:  .1s ease-in-out
+      &::before
+        margin: 0 -6px
+        right: 27.5px
+        border: 6px solid transparent
+        border-bottom-color:  #cad3e0
+        position: absolute
+        pointer-events: none
+        content: ''
+        height: 0
+        width: 0
+        bottom: 100%
+      &::after
+        margin: 0 -5px
+        right: 27.5px
+        border: 5px solid transparent
+        border-bottom-color: white
+        position: absolute
+        pointer-events: none
+        content: ''
+        height: 0
+        width: 0
+        bottom: 100%
+      div
+        padding: 0px 15px
+        height: 30px
+        &:hover
+          background: #e8e8e8
+        span 
+          display: block
+          height: 100%
+          line-height: 30px
+          font-size: 13px
+          letter-spacing: 0.1px
+    .more
+      width: 24px
+      height: 24px
+      background: url('data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%2F%3E%3Cpath%20d%3D%22m6.5%2010%205.5%204.5%205.5-4.5%22%20stroke%3D%22%23c1c5cc%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.875%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E')
+      background-size: contain
+      position: absolute
+      right: 0
+      cursor: pointer
+      &:hover
+        .modalMore
+          visibility: visible
+          top: 25px
+
+
+.ui_block
+  background-color: #fff
+  border-radius: 4px
+  border: 1px solid #e6ecf5
+  margin-bottom: 15px
+  padding: 15px
+  box-shadow: 0px 1px 0px -1px #d3d9de, 0 1.5px 0 -1px #e7e8ec
